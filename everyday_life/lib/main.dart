@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Everyday Life',
       onGenerateRoute: AppRouter.generateRoute,
       initialRoute: DashboardScreen.routeName,
       home: const DashboardScreen(),
