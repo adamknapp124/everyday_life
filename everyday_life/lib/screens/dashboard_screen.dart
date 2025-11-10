@@ -26,7 +26,7 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
-        title: const Text('Dashboard'),
+        title: const Center(child: Text('Everyday Life')),
         backgroundColor: AppColors.primary,
         titleTextStyle: const TextStyle(
           color: AppColors.textPrimary,
@@ -45,17 +45,17 @@ class DashboardScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: AppColors.textPrimary,
+                color: AppColors.secondary,
               ),
             ),
             const SizedBox(height: 8),
             Container(
               decoration: BoxDecoration(
-                color: AppColors.cardBackground,
-                borderRadius: BorderRadius.circular(12),
+                color: AppColors.background,
+                borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.3),
+                    color: AppColors.secondary,
                     blurRadius: 4,
                     offset: const Offset(0, 2),
                   ),
@@ -81,8 +81,6 @@ class DashboardScreen extends StatelessWidget {
             ),
 
             const SizedBox(height: 20),
-
-            // 👇 The GridView below
             Expanded(
               child: GridView.builder(
                 itemCount: routesToShow.length,

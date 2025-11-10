@@ -15,3 +15,10 @@ class Task {
     this.completed = false,
   });
 }
+
+// Example upcoming events data
+final List<Map<String, String>> upcomingEvents = [
+  {'title': 'Poop', 'date': 'Nov 12, 2025'},
+  {'title': 'Workout', 'date': 'Nov 13, 2025'},
+  {'title': 'Grocery Shopping', 'date': 'Nov 15, 2025'},
+];

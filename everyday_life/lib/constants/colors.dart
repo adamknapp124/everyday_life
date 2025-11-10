@@ -24,4 +24,5 @@ class AppColors {
   // Optional additional colors
   static const Color error = Color(0xFFB00020);
   static const Color success = Color(0xFF4CAF50);
+  static const Color black = Color(0xFF000000);
 }
